@@ -1,0 +1,59 @@
+.calc-button-num {
+    width: 50px;
+    height: 50px;
+    background-color: #a8c0ec;
+    border: 1px solid #423b3b;
+    margin-bottom: 2px;
+    margin-top: 1px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.calc-button-func {
+    width: 50px;
+    height: 50px;
+    background-color: #a8c0ec;
+    border: 1px solid #423b3b;
+    margin-bottom: 2px;
+    margin-top: 1px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.calc-button-calc {
+
+    width: 150px;
+    height: 50px;
+    background-color: #a8c0ec;
+    border: 1px solid #423b3b;
+    margin-bottom: 2px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inputfield {
+
+    width: 200px;
+    height: 30px;
+    background-color: #a8c0ec;
+    border: 1px solid #423b3b;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
