@@ -32,12 +32,12 @@
         </div>
         <div>
             <button class="calc-button-num" onclick="appendToNumber(this)" id="num1">0</button>
-            <button class="calc-button-func" onclick="appendToNumber(this)" id="num1">,</button>
+            <button class="calc-button-func" onclick="appendToNumber(this)" id="num1">.</button>
             <button class="calc-button-func" onclick="clearDisplay()" id="num1">C</button>
             <button class="calc-button-func" onclick="operate(this)" id="divide">/</button>
         </div>
         <div>
-            <button class="calc-button-calc" onclick="intermediateCalc()" id="calc">Calculate</button>
+            <button class="calc-button-calc" onclick="calculate()" id="calc">Calculate</button>
         </div>
 
 
