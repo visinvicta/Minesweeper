@@ -37,7 +37,7 @@
             <button class="calc-button-func" onclick="operate(this)" id="divide">/</button>
         </div>
         <div>
-            <button class="calc-button-calc" onclick="calculateResult()" id="calc">Calculate</button>
+            <button class="calc-button-calc" onclick="intermediateCalc()" id="calc">Calculate</button>
         </div>
 
 

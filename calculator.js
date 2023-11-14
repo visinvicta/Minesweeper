@@ -6,30 +6,28 @@ let result = 0;
 const display = document.getElementById("display");
 
 function appendToNumber(button) {
-    if (operator == '') {                   
+    if (operator == '') {
         firstNum += button.innerText;
         display.value = firstNum;
         log();
     }
     else {
-        secondNum += button.innerText;      
+        secondNum += button.innerText;
         display.value = secondNum;
         log();
     }
-
 }
 
 function operate(button) {
-
     if (operator == '') {
         operator = button.id;
         display.value = 0;
 
     } else if (operator !== '' && firstNum !== '' && secondNum !== '') {
-        intermediateCalc();
+        calculate();
         operator = button.id;
         log();
-    
+
     } else if (firstNum !== '' && secondNum == '') {
         operator = button.id;
         log();
@@ -37,35 +35,7 @@ function operate(button) {
     }
 }
 
-
-function calculateResult() {
-    switch (operator) {
-        case 'add':
-            result = parseInt(firstNum) + parseInt(secondNum);
-            break;
-
-        case 'subtract':
-            result = parseInt(firstNum) - parseInt(secondNum);
-            break;
-
-        case 'multiply':
-            result = parseInt(firstNum) * parseInt(secondNum);
-            break;
-
-        case 'divide':
-            result = parseInt(firstNum) / parseInt(secondNum);
-            break;
-    }
-    log();
-
-    display.value = result;
-    firstNum = '';
-    secondNum = '';
-    operator = '';
-    result = 0;
-}
-
-function intermediateCalc() {
+function calculate() {
     console.log("aids");
     switch (operator) {
         case 'add':
@@ -84,13 +54,10 @@ function intermediateCalc() {
             result = parseInt(firstNum) / parseInt(secondNum);
             break;
     }
-
-
     display.value = result;
     firstNum = result;
     secondNum = '';
     log();
-    
 }
 
 function clearDisplay() {
