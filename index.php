@@ -11,6 +11,7 @@
 
     <div id="calculator">
         <input class="inputfield" type="text" id="display" value="0">
+       
         <div>
             <button class="calc-button-num" onclick="appendToNumber(this)" id="num1">1</button>
             <button class="calc-button-num" onclick="appendToNumber(this)" id="num2">2</button>
