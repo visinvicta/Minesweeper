@@ -1,59 +1,86 @@
-.calc-button-num {
-    width: 50px;
-    height: 50px;
-    background-color: #a8c0ec;
-    border: 1px solid #423b3b;
-    margin-bottom: 2px;
-    margin-top: 1px;
-    font-size: 20px;
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+} */
+
+
+@font-face {
+    font-family: 'mine-sweeperregular';
+    src: url('/fonts/mine-sweeper-webfont.woff2') format('woff2'),
+         url('/fonts/mine-sweeper-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
-.calc-button-func {
-    width: 50px;
-    height: 50px;
-    background-color: #a8c0ec;
-    border: 1px solid #423b3b;
-    margin-bottom: 2px;
-    margin-top: 1px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 
+#board {
+    width: 500px;
+    height: 500px;
+    border: 2px solid rgb(63, 62, 62);
+    background-color: #c0c0c0;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.calc-button-calc {
+#board div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid whitesmoke;
 
-    width: 212px;
-    height: 50px;
-    background-color: #a8c0ec;
-    border: 1px solid #423b3b;
-    margin-bottom: 2px;
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-family: 'mine-sweeperregular', sans-serif;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.inputfield {
-
-    width: 206px;
-    height: 30px;
-    background-color: #a8c0ec;
-    border: 1px solid #423b3b;
-    margin-bottom: 20px;
-    margin-top: 1px;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.tile-clicked {
+    background-color: darkgrey;
 }
+
+.x1 {
+    color: #0000ff;
+}
+
+.x2 {
+    color: #008200;
+}
+
+.x3 {
+    color: #fe0000;
+}
+
+.x4 {
+    color: #000084;
+}
+
+.x5 {
+    color: #840000;
+}
+
+.x6 {
+    color: #008284;
+}
+
+.x7 {
+    color: #840084;
+}
+
+.x8 {
+    color: #757575;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#rows {
+    background-color: #c0c0c0;
+    height: 48px;
+    width: 48px;
+}
+
